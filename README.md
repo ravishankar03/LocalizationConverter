@@ -17,18 +17,25 @@ Modify the parameters at the bottom of the script:
 python
 Copy code
 file_path = "translations.xlsx"  # Replace with the path to your Excel file
+
 columns_to_translate = [1, 3]    # Replace with the 1-based column numbers you want to translate
+
 source_lang = "en"               # Replace with the source language code (e.g., "en" for English)
+
 target_langs = ["es", "fr", "de"]             # Replace with the target language code (e.g., "es" for Spanish)
+
 replace = true                  # Set to True if you want to replace the existing columns
+
 For example:
 
-To translate columns A and C (1, 3) from English to French, set:
+To translate columns A and C (1, 3) from English to French and few other languages, set:
 python
 Copy code
 columns_to_translate = [1, 3]
 source_lang = "en"
 target_langs = ["es", "fr", "de"]
+replace = true  
+
 4. Run the Script
 Open a terminal or command prompt, navigate to the folder containing translate_excel.py, and run:
 
